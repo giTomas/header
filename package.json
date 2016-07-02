@@ -1,0 +1,19 @@
+{
+  "name": "autoprefixer_workflow",
+  "version": "1.0.0",
+  "description": "Starter jade,sass,autoprefixer,browsersync,js-prettify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomáš Kösegi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-js-prettify": "^0.1.0",
+    "gulp-pug": "^3.0.2",
+    "gulp-sass": "^2.2.0"
+  }
+}

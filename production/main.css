@@ -1,0 +1,7 @@
+.view {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flexContainer {
+  width: calc(33.333% - 2em);
+  padding: 1em; }
