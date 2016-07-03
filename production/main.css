@@ -125,10 +125,10 @@ body {
 
 .c-menu {
   width: 100%;
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,12 +184,7 @@ p {
   display: none; }
 
 .is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0); }
+  position: fixed; }
 
 .have-shadow {
   -webkit-box-shadow: 0 1px 5px rgba(110, 86, 72, 0.8);
