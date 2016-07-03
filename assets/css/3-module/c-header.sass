@@ -1,0 +1,108 @@
+//vars
+$responsive-menu: 600px
+$basic-color: #D8CBC3
+
+
+a
+  text-decoration: none
+  color: black
+  display: block
+
+body
+  background-color: lighten($basic-color, 12.5%)
+  font-family: sans-serif
+
+.c-header
+  box-shadow: 0 0 4px rgba(darken($basic-color, 45%), 0.8)
+
+.c-header__pagetitle
+  font-size: 4rem
+  color: white
+
+.c-haeder__background
+  position: relative
+  height: 40vh
+  width: 100%
+  z-index: 9999
+  background-color: darken($basic-color, 25%)
+  // background:
+    // image: url('img/stromata.jpg')
+    // attachment: fixed
+    // repeat: no-repeat
+    // size: cover
+  display: flex
+  align-items: center
+  justify-content: center
+
+.c-header__nav
+  display: flex
+  margin-right: 0.5rem
+  // transition: transform 1s ease-in-out
+  @media(max-width: $responsive-menu)
+    // transform: translateY(100%)
+    flex-wrap: wrap
+    display: none
+    width: 100%
+
+.c-nav__item
+  padding-left: 0.25em
+  // display: block
+  @media(max-width: $responsive-menu)
+    width: 100%
+    text-align: center
+    padding: 0.5em 0
+
+.c-menu__title
+  font-size: 2rem
+  padding: 0.25em
+
+.c-menu
+  width: 100%
+  // height: 10vh
+  transform: translateY(-100%)
+  overflow: hidden
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  transition: box-shadow 0.22s
+  background-color: $basic-color
+
+.c-menu__ctrls
+  display: none
+  margin-right: 0.5rem
+  cursor: pointer
+  svg
+    transition: all 0.22s
+    &:hover
+      fill: white
+  @media(max-width: $responsive-menu)
+    display: flex
+
+.c-text
+  width: 60%
+  margin: 0 auto
+  padding: 2em 1em
+  @media(max-width: $responsive-menu)
+    width: 90%
+  @media(max-width: 400px)
+    width: 100%
+
+p
+  margin-bottom: 1rem
+
+.is-hidden
+  display: none
+
+.is-fixed
+  position: fixed
+  top: 0
+  left: 0
+  transform: translateY(0)
+
+.have-shadow
+  box-shadow: 0 1px 5px rgba(darken($basic-color, 45%), 0.8)
+
+.nav-is-showing
+  display: flex
+  // transform: translateY(0)

@@ -9,3 +9,28 @@ html(lang="sk")
     link(rel="stylesheet", href="main.css")
   body
 
+    header#js-header.c-header
+      .c-haeder__background
+        .c-header__pagetitle Page-Title
+    #js-menu.c-menu
+      .c-menu__title Page-Title
+      .c-menu__ctrls
+        #js-menu-open.c-menu__open
+          svg(fill="#000000", height="36", viewBox="0 0 24 24", width="36", xmlns="http://www.w3.org/2000/svg")
+            path(d="M0 0h24v24H0z", fill="none")
+            path(d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z")
+        #js-menu-close.c-menu__close.is-hidden
+          svg(fill="#000000", height="36", viewBox="0 0 24 24" width="36", xmlns="http://www.w3.org/2000/svg")
+            path(d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+            path(d="M0 0h24v24H0z", fill="none")
+      nav#js-nav.c-header__nav
+        a.c-nav__item(href="/") Home
+        a.c-nav__item(href="about") About
+        a.c-nav__item(href="contact") Contact
+    .c-text(style="height:1000px")
+      p Lorem ipsum dolor sit amet, vim ne dico elit ridens, eam vero noluisse eu. Ne choro invidunt menandri pri, ne nec facilis invenire, id inermis verterem qui. Ex eos labore tritani, nec fabulas detracto offendit an. Eu usu atqui delenit, pri debet maluisset id. His velit nostrum at, quo id utamur delenit nominavi.
+      p Ei fabulas labores necessitatibus nec, ut quo illum elaboraret. Ei mea summo dicant appellantur, pri eripuit habemus sapientem no. Mutat perfecto vulputate vis ei. Qui nibh omnium graecis in. Nec ex noster deterruisset, cu qui utroque neglegentur.
+      p Ut mazim iisque fastidii vel, ex ferri mediocrem vim. Inani instructior nam ad, mel ceteros mentitum menandri ut. In usu quodsi inimicus deseruisse, an eleifend sapientem deterruisset sit. Discere minimum sea ei, viris debitis mel ut.
+      p Idque vivendum ex quo, alienum qualisque tincidunt cu eum. Vel audiam ceteros ne, eam mucius dolorum id. Eos in doctus interpretaris, eum assueverit deterruisset ea, ex his veniam nostrum. Homero veritus definiebas vix an, melius viderer ei qui, an nonumes insolens est. Pro no assum aperiam discere. Eu eros omnis petentium vel. An menandri intellegam mea, graeci impedit propriae te sea, alii ignota definitiones in eam.
+      p Cum omnesque detraxit cu, eu eum illud praesent. Ius eu dicat saperet insolens, usu ad aliquando instructior. In has mutat denique, ea sit graeci vituperata argumentum. Et mel harum mundi, accusata maluisset his eu, ea pro nominati voluptaria theophrastus.
+    script(src="js/menu.js")

@@ -9,13 +9,13 @@ var sass         = require('gulp-sass');
 
 
 gulp.task('sass', function () {
-    return gulp.src('sass/main.scss')
+    return gulp.src('assets/css/main.scss')
         .pipe(sass({
             includePaths: ['css']
         }))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
         .pipe(gulp.dest('production'))
-        .pipe(gulp.dest('sass'));
+        // .pipe(gulp.dest('sass'));
 });
 
 gulp.task('browserSync', function() {
@@ -43,11 +43,11 @@ gulp.task('prettify', function(){
  });*/
 
 gulp.task('watch', ['browserSync'], function(){
-  gulp.watch('assets/css/*.css', ['styles']);
+  // gulp.watch('assets/css/*.css', ['styles']);
   gulp.watch('views/*.pug', ['pug']);
   //gulp.watch('js/*.js', ['prettify']);
   gulp.watch('production/**', browserSync.reload);
-  gulp.watch('assets/css/*.sass', ['sass']);
+  gulp.watch('assets/css/**', ['sass']);
 });
 
 gulp.task('default', ['browserSync', 'watch']);
